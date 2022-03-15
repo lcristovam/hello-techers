@@ -1,0 +1,23 @@
+//Zerando Margens e Paddings  de todos os elementos do HTML
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    /* isso aqui 
+     serve para reolver a situação em que eu peço para 
+     uma div ter 200 px por exemplo, mas devido a um conteúdo 
+     dentro dela com padding, seu tamanho real não será de 200px 
+    */
+}
+
+@import 'sass/colors';
+@import 'sass/typography';
+
+body{
+    width: 100%;
+}
+
+
+@import 'sass/layout';
+@import 'sass/spacing';

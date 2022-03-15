@@ -1,0 +1,549 @@
+.title-2{
+  color:  $green-normal;
+  font-weight: 800;
+}
+.title-1{
+    color:  $gray-normal;
+    font-weight: 800;
+  }
+
+.menu{
+    width: 100%;
+    padding: 0px 40px;
+    padding-top: 10px;
+    height: 80px;
+
+}
+.menu-left{
+  font-size: 18px;
+  width: 700px;
+  float: left;
+}
+
+
+
+
+.border{
+    border: 1px solid red;
+}
+
+
+
+.container{
+  max-width: 1220px;
+  margin: 0 auto;
+  
+  padding: 24px 16px; 
+}
+
+.container-item{
+  padding-top: 51px;
+  margin-left: 56px; 
+}
+
+.button-1{
+  position: absolute;
+  top: 250px;
+  left: 890px;
+  border:none;
+  background-color: $green-dark;
+  color: white;
+  font-size: 24px;
+  padding: 12px 32px;
+  border-radius: 5px;
+  box-shadow:  0px 1px 1px rgba(0,0,0 ,.1);
+
+  &:hover{
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid $green-normal;
+    transition: .5s;
+    color: $green-normal;
+  }
+}
+.techer{
+
+  height: 90vh;
+
+}
+
+.relative{
+  position:relative;
+}
+
+.bg-techer{
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: -170px;
+ 
+
+}
+
+#Arrow1{
+  transform: translateY(40px)
+}
+
+@media screen and(max-width: 500px){
+    .menu-left{
+      display: none;
+    }
+
+}
+@media screen and (max-width: 500px){
+  
+    .techer{
+
+      height: auto;
+    
+    }
+  }
+
+//Animations
+
+#Elipse1{  
+  animation: show1 5s ease  infinite;
+  opacity: 0;
+  transition: 1s;
+}
+
+#Elipse2{
+  animation: show2 2.8s ease  infinite;
+  opacity: 0;
+  transition: 1s;
+}
+
+#Elipse3{
+  animation: show3 5s ease  infinite;
+  opacity: 0;
+  transition: 1s;
+}
+
+#Elipse4{
+  animation: show4 2.8s ease  infinite;
+  opacity: 0;
+  transition: 1s;
+}
+
+#Elipse5{
+  animation: show5 3.5s ease  infinite;
+  opacity: 0;
+  transition: 1s;
+
+}
+#Elipse6{
+  animation: show6 3.5s ease  infinite;
+  opacity: 0;
+  transition: 1s;
+
+}
+#Elipse7{
+  animation: show7 4.5s ease  infinite;
+  opacity: 0;
+  transition: 1s;
+
+}
+
+
+@keyframes show1{
+    0%{
+      transform: translateY(120px);
+      opacity:0;
+      
+      
+    }
+    50%{
+   
+      opacity: 1 ;
+     
+      
+    }
+    70%{
+     
+      opacity: 0.7 ;
+     
+      
+    }
+    90%{
+     
+      opacity: 0.6 ;
+    
+     
+      
+    }
+    91%{
+     
+      opacity: 0.5 ;
+     }
+     92%{
+     
+      opacity: 0.4 ;
+     }
+     93%{
+     
+      opacity: 0.3 ;
+     }
+     94%{
+     
+      opacity: 0.2 ;
+     }
+     95%{
+     
+      opacity: 0.1 ;
+     }
+
+    100%{
+      
+     
+      transform: translateY(0);
+      
+     
+      
+    }
+
+}
+
+@keyframes show2{
+  0%{
+    transform: translateY(130px);
+    opacity:0;
+    
+    
+  }
+
+  50%{
+   
+    opacity: 1 ;
+   
+    
+  }
+  70%{
+   
+    opacity: 0.7 ;
+   
+    
+  }
+  90%{
+   
+    opacity: 0.6 ;
+  
+   
+    
+  }
+  91%{
+   
+    opacity: 0.5 ;
+   }
+   92%{
+   
+    opacity: 0.4 ;
+   }
+   93%{
+   
+    opacity: 0.3 ;
+   }
+   94%{
+   
+    opacity: 0.2 ;
+   }
+   95%{
+   
+    opacity: 0.1 ;
+   }
+  100%{
+    
+    
+    transform: translateY(0);
+ 
+    
+  }
+
+}
+
+@keyframes show3{
+  0%{
+    transform: translateY(100px);
+    opacity:0;
+    
+    
+  }
+
+  50%{
+   
+    opacity: 1 ;
+   
+    
+  }
+  70%{
+   
+    opacity: 0.7 ;
+   
+    
+  
+  }
+  90%{
+   
+    opacity: 0 ;
+    transition: 1s;
+    
+  }
+  100%{
+    
+  
+    transform: translateY(0);
+    
+   
+    
+  }
+
+}
+@keyframes show4{
+  0%{
+    transform: translateY(150px);
+    opacity:0;
+    
+    
+  }
+  50%{
+   
+    opacity: 1 ;
+   
+    
+  }
+  70%{
+   
+    opacity: 0.7 ;
+   
+    
+  }
+  90%{
+   
+    opacity: 0.6 ;
+  
+   
+    
+  }
+  91%{
+   
+    opacity: 0.5 ;
+   }
+   92%{
+   
+    opacity: 0.4 ;
+   }
+   93%{
+   
+    opacity: 0.3 ;
+   }
+   94%{
+   
+    opacity: 0.2 ;
+   }
+   95%{
+   
+    opacity: 0.1 ;
+   }
+  100%{
+    
+    
+    transform: translateY(0);
+    
+   
+    
+  }
+
+}
+@keyframes show5{
+  0%{
+    transform: translateY(180px);
+    opacity:0;
+    
+    
+  }
+  50%{
+   
+    opacity: 1 ;
+   
+    
+  }
+  70%{
+   
+    opacity: 0.7 ;
+   
+    
+  }
+  90%{
+   
+    opacity: 0.6 ;
+  
+   
+    
+  }
+  91%{
+   
+    opacity: 0.5 ;
+   }
+   92%{
+   
+    opacity: 0.4 ;
+   }
+   93%{
+   
+    opacity: 0.3 ;
+   }
+   94%{
+   
+    opacity: 0.2 ;
+   }
+   95%{
+   
+    opacity: 0.1 ;
+   }
+  100%{
+    
+    
+    
+  }
+
+}
+@keyframes show6{
+  0%{
+    transform: translateY(100px);
+    opacity:0;
+    
+    
+  }
+
+  50%{
+   
+    opacity: 1 ;
+   
+    
+  }
+  70%{
+   
+    opacity: 0.7 ;
+   
+    
+  }
+  90%{
+   
+    opacity: 0.6 ;
+  
+   
+    
+  }
+  91%{
+   
+    opacity: 0.5 ;
+   }
+   92%{
+   
+    opacity: 0.4 ;
+   }
+   93%{
+   
+    opacity: 0.3 ;
+   }
+   94%{
+   
+    opacity: 0.2 ;
+   }
+   95%{
+   
+    opacity: 0.1 ;
+   }
+  100%{
+    
+  
+    transform: translateY(0);
+   
+    
+  }
+
+}
+@keyframes show7{
+  0%{
+    transform: translateY(200px);
+    opacity:0;
+    
+    
+  }
+
+  50%{
+   
+    opacity: 1 ;
+   
+    
+  }
+  70%{
+   
+    opacity: 0.7 ;
+   
+    
+  }
+  90%{
+   
+    opacity: 0.6 ;
+  
+   
+    
+  }
+  91%{
+   
+    opacity: 0.5 ;
+   }
+   92%{
+   
+    opacity: 0.4 ;
+   }
+   93%{
+   
+    opacity: 0.3 ;
+   }
+   94%{
+   
+    opacity: 0.2 ;
+   }
+   95%{
+   
+    opacity: 0.1 ;
+   }
+  100%{
+    
+   
+    transform: translateY(0);
+   
+    
+  }
+
+}
+
+#Elipse12, #Elipse13, #Elipse14,#cloud, #Techer-1{
+
+  animation: bird 2s  infinite alternate;
+  
+
+
+} 
+
+@keyframes bird {
+
+  0%{
+    transform: translate(-30px, -30px);
+    
+  }
+
+  50%{
+    transform: translate(-0px, -0px);
+    
+  }
+
+
+  100%{
+    transform: translate(60px, -40px)
+   
+
+  }
+}
+

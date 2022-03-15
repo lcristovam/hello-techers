@@ -1,0 +1,100 @@
+h1, h2,h3, h4, a ,p  {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: $gray-normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 96px;
+    line-height: 100%;
+}
+
+h2{
+    font-size: 72px;
+    line-height: 110%;
+}
+h3{
+    font-size: 40px;
+    line-height: 110%;
+}
+h4{
+    font-size: 32px;
+    line-height: 120%;
+}
+h5{
+    font-size: 24px;
+    line-height: 140%;
+}
+h6{
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.menu{
+    
+    a{
+        font-size: 16px;
+    }
+}
+.link{
+    padding: 8px 8px;
+    margin-right: 35px;
+  
+    display: inline-block;
+    position: relative;
+
+
+    &::after{
+      content:'';
+      display: block;
+      position:absolute;
+      top:100%;
+      left:0;
+  
+      transform: translate(20% , 80%) ;
+      transition: .5s ease;
+      width: 0%;
+      height: 2px;
+      background-color: $green-normal;  
+    } 
+
+
+    
+    &:hover{
+            opacity: 0.8;
+
+            &::after{
+            width: 70%;
+            
+            }
+        }
+
+}   
+@media screen and(max-width: 1400px){
+    h1{
+        font-size: 80px;
+    }
+
+}
+
+@media screen and(max-width: 960px){
+
+    h1{
+        font-size: 64px;
+    }
+    h2{
+        font-size: 48px;
+    }
+}
